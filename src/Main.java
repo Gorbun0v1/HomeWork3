@@ -19,9 +19,11 @@ public class Main {
         System.out.println("********************************");
         System.out.println("Задание №3");
         int Year = 2022;
-        boolean HighYear = Year <= 2020 || Year >= 2024 ;
-            if (HighYear) {System.out.println("год является високосным");}
-                else {System.out.println("год не является високосным");}
+           if (Year % 4 == 0 && Year % 100 != 0 || Year % 400 == 0) {
+            System.out.println(Year + "является высокосным");}
+            else {
+            System.out.println(Year + " не является высокосным");
+        }
         System.out.println("********************************");
         System.out.println("Задание №4");
         int deliveryDistance = 95;
